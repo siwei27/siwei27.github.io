@@ -1,8 +1,11 @@
 name: Generate Site
+
 on:
   push:
     branches:
-      - main
+      - main  # Set a branch to deploy
+  pull_request:
+
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
@@ -26,5 +29,4 @@ jobs:
           publish_dir: ./public
           keep_files: false
           publish_branch: gh-pages
-          # 如果使用自定义域名，还需要添加下面一行配置
-           cname: yaopao.org
+          cname: yaopao.org
