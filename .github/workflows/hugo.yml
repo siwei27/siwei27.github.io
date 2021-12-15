@@ -13,7 +13,7 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v2
         with:
-          submodules: hugo-theme-meme  # Fetch Hugo themes (true OR recursive) 获取submodule主题
+          submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
         
       - name: Setup hugo
