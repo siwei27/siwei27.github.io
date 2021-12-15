@@ -29,4 +29,9 @@ jobs:
           publish_dir: ./public
           keep_files: false
           publish_branch: gh-pages
+<<<<<<< HEAD
           cname: yaopao.org
+=======
+          # 如果使用自定义域名，还需要添加下面一行配置
+           cname: yaopao.org
+>>>>>>> b5834475506280e9020ae9f30e5f50b1927703ec
